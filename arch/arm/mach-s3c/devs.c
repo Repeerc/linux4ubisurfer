@@ -152,7 +152,7 @@ static struct resource s3c_fb_resource[] = {
 };
 
 struct platform_device s3c_device_fb = {
-	.name		= "s3c-fb",
+	.name		=  "s3c2443-fb",
 	.id		= -1,
 	.num_resources	= ARRAY_SIZE(s3c_fb_resource),
 	.resource	= s3c_fb_resource,

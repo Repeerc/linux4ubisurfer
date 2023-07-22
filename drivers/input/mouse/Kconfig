@@ -300,6 +300,12 @@ config MOUSE_ELAN_I2C_SMBUS
 
 	   If unsure, say Y.
 
+config TOUCHPAD_I2C_UBI
+	tristate "UbiSurfer i2c touchpad"
+	depends on I2C
+	help
+	  This driver adds support for UbiSurfer Trackpads.
+	  
 config MOUSE_INPORT
 	tristate "InPort/MS/ATIXL busmouse"
 	depends on ISA

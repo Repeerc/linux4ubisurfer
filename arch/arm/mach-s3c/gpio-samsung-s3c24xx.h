@@ -93,7 +93,7 @@ enum s3c_gpio_number {
 #define S3C2410_GPM(_nr)	(S3C2410_GPIO_M_START + (_nr))
 
 #ifdef CONFIG_CPU_S3C244X
-#define S3C_GPIO_END	(S3C2410_GPJ(0) + 32)
+#define S3C_GPIO_END	(S3C2410_GPM(0) + 32)
 #elif defined(CONFIG_CPU_S3C2443) || defined(CONFIG_CPU_S3C2416)
 #define S3C_GPIO_END	(S3C2410_GPM(0) + 32)
 #else
